@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <title>CodeMentor Foundation</title>
+  <style type="text/tailwindcss">
+     @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+
+    .logo {
+      width: 60px;
+    }
+
+
+    section {
+      padding: 2em;
+    }
+
+    footer {
+      color: rgba(73, 72, 72, 0.107);
+      text-align: center;
+      padding: 1em;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-white">
+    <header class="absolute inset-x-0 top-0 z-50">
+      <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <div class="flex lg:flex-1">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">OCR</span>
+            <img class="logo" src="D:\uas web praktikum\asstes\logo.png" alt="">
+          </a>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+          <a href="/dashboard" class="font-b px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Home</a>
+          <a href="/team" class="font-b px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Course</a>
+          <a href="/projects" class="font-b px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">About</a>
+          <a href="/reports" class="font-b px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Account</a>
+        </div>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </nav>
+      <div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+          <p class="text-sm leading-6 text-gray-900">
+            <strong class="font-semibold">Solo Indah Tournament</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Akan berlangsung pada tanggal 19 - 24 Desember.
+          </p>
+          <a href="#" class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Gabung Sekarang <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="flex flex-1 justify-end">
+          <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
+            <svg class="h-5 w-5 text-gray-900" viewBox="0 0 20 20" aria-hidden="true">
+              <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+  
+    <div class="relative isolate px-6 pt-14 lg:px-8 pb-1">
+      <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+        <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+      </div>
+      <div class="mx-auto max-w-2xl py-25 sm:py-48 lg:py-56">
+        <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+          <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+            Awali Belajar Mu. <a href="#" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Klik Di sini <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+        <div class="text-center">
+          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Selamat datang di era pembelajaran yang tak terbatas dan inspiratif.</h2>
+          <p class="mt-6 text-lg leading-8 text-gray-600">Ketika mimpi bertemu realitas, pembelajaran menjadi kekuatan yang tak terbantahkan.</p>
+          <div class="mt-10 flex items-center justify-center gap-x-6">
+            <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
+          </div>
+        </div>
+      </div>
+      <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+        <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-white py-5 sm:py-20">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:text-center">
+        <h2 class="text-base font-semibold leading-7 text-indigo-600">Lihat Ini</h2>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Kenapa Harus Kami?</p>
+        <p class="mt-6 text-lg leading-8 text-gray-600">Karena CodeMentor telah dipercaya oleh beberapa Start-up besar seperti.</p>
+      </div>
+      <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg">
+                <img class="h-8 w-auto" src="D:\uas web praktikum\asstes\microsoft.png" alt="">
+              </div>
+              Microsoft
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">Bersama Microsoft, kami mewujudkan inovasi yang membentuk masa depan industri.</dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div class="absolute left-0 top-0 flex h-11 w-12 items-center justify-center rounded-lg">
+                <img class="image1" src="D:\uas web praktikum\asstes\google.png" alt="">
+              </div>
+              Google
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">Bersama Google, kami terus mendorong batas-batas inovasi dalam setiap langkah.</dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg">
+                <img class="h-8 w-auto" src="D:\uas web praktikum\asstes\amazon.png" alt="">
+              </div>
+              Amazon
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">Merintis masa depan bersama dengan teknologi revolusioner Amazon Go.</dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg">
+                <img class="h-8 w-auto" src="D:\uas web praktikum\asstes\meta.png" alt="">
+              </div>
+              Meta Platform
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">Kami berkolaborasi dengan Meta untuk membawa inovasi dan perubahan positif.</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <h2 class="text-center mt-1 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl py-1">Kata Mereka yang Pernah Belajar di CodeMentor</h2>
+  <section class="relative isolate overflow-hidden bg-white px-6 py-10 sm:py-10 lg:px-8">
+    <div class="grid grid-cols-1 gap-10 sm:grid-cols-3">
+      <!-- Testimonial 1 -->
+      <div class="relative group">
+        <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
+        <div class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
+        <div class="mx-auto max-w-2xl lg:max-w-4xl">
+          <figure class="mt-10">
+            <blockquote class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-1xl sm:leading-20">
+              <p>“Saya merupakan capres nomor urut 1 karena CodeMentor adalah aplikasi belajar coding nomor 1 di Indonesia”</p>
+            </blockquote>
+            <figcaption class="mt-10">
+              <div class="mt-4 flex items-center justify-center space-x-3 text-base">
+                <div class="font-semibold text-gray-900">Anies</div>
+                <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
+                  <circle cx="1" cy="1" r="1" />
+                </svg>
+                <div class="text-gray-600">Capres no urut 1</div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+  
+      <!-- Testimonial 2 -->
+      <div class="relative group">
+        <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
+        <div class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
+        <div class="mx-auto max-w-2xl lg:max-w-4xl">
+          <figure class="mt-10">
+            <blockquote class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-25 py-10">
+              <p>“Ini dimana ?”</p>
+            </blockquote>
+            <figcaption class="mt-10">
+              <img class="mx-auto h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              <div class="mt-4 flex items-center justify-center space-x-3 text-base">
+                <div class="font-semibold text-gray-900 pb-4">Roronoa Zoro</div>
+                <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
+                  <circle cx="1" cy="1" r="1" />
+                </svg>
+                <div class="text-gray-600 pb-4">Straw Hat Pirates</div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+  
+      <!-- Testimonial 3 -->
+      <div class="relative group">
+        <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
+        <div class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
+        <div class="mx-auto max-w-2xl lg:max-w-4xl">
+          <figure class="mt-10">
+            <blockquote class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-1xl sm:leading-20 pb-8">
+              <p>“Kak Ros menyuruh saya untuk belajar disini, walaupun saya botak dan masih TK”</p>
+            </blockquote>
+            <figcaption class="mt-10">
+              <div class="mt-4 flex items-center justify-center space-x-3 text-base">
+                <div class="font-semibold text-gray-900">Ipin</div>
+                <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
+                  <circle cx="1" cy="1" r="1" />
+                </svg>
+                <div class="text-gray-600">Adik Kak Ros</div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="bg-white py-24 sm:py-32">
+    <div class="mx-auto grid max-w-5xl gap-x-8 gap-y-5 px-6 lg:px-8 xl:grid-cols-2">
+      <div class="max-w-5xl">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl pb-3">Kenalan dengan para Architects of Success kita</h2>
+      </div>
+      <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+        <li>
+          <div class="flex items-center gap-x-6">
+            <img class="h-40 w-24 rounded" src="D:\uas web praktikum\asstes\oci1.png" alt="">
+            <div>
+              <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Andi Albukhari f</h3>
+              <p class="text-sm font-semibold leading-6 text-indigo-600">Mahasiswa Untad</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="flex items-center gap-x-6">
+            <img class="h-40 w-25 rounded" src="D:\uas web praktikum\asstes\fatur.png" alt="">
+            <div>
+              <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Andi Faturrahman</h3>
+              <p class="text-sm font-semibold leading-6 text-indigo-600">Roamer Sulteng</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 flex justify-between items-center">
+      <div>
+        <p class="text-sm font-semibold">&copy; CodeMentor</p>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="#" class="text-gray-300 hover:text-white">Privacy Policy</a>
+        <a href="#" class="text-gray-300 hover:text-white">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
